@@ -120,7 +120,7 @@ Y otros muchos más que están definidos en los archivos menciondados antes.
 ## 🎨 **Temas y Sintaxis para LaTeX**
 El resaltado de documentos LaTeX suele ser bastante malo, así que cree mi propio archivo de sintaxis:
 - `~/.config/nvim/after/syntax/tex.vim`
-En el documento se encuentran varios temas basados en paletas famosas. Estos se pueden activar comentando o descomentando las últimas líneas del archivo.
+<br>En el documento se encuentran varios temas basados en paletas famosas. Estos se pueden activar comentando o descomentando las últimas líneas del archivo.
 <br>Creo que es claro cómo funciona.
 <br> **Temas recomendados:** *Nord, One Dark Pro, TokyoNight, Mine*.
 <br> En el caso de no querer ninguna de las paletas que vienen en el documento puedes crear tu propia paleta de colores!!!
