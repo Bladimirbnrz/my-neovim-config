@@ -125,3 +125,4 @@ O si lo prefieres, probar el resaltado TreSitter ejecutando en neovim
 
 (Elimina la carpeta ~/.../after si eliges esta última opción)
 
+# my-neovim-config
