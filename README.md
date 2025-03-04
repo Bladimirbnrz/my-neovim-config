@@ -23,8 +23,8 @@ Luego, abre Neovim y ejecuta:
 :PlugInstall
 ```
 ## 📚 **Recomendaciones Post-Instalación**
-- Revisa y lee la documentación de todos los plugins
-- Busca el colorscheme que sea de tu agrado 
+- Revisa y lee la documentación de todos los plugins.
+- Busca el colorscheme que sea de tu agrado. 
 
 ---
 ## 🎨 **Temas**
@@ -93,14 +93,14 @@ Para cambiar de tema, edita `init.vim` y comenta o descomenta las líneas en la 
 ---
 
 ## 🛠 **Utlidades Especiales**
-Neovim tiene las virtud de poder tener configuraciones especiales para cada tipo de archivo
+Neovim tiene las virtud de poder tener configuraciones especiales para cada tipo de archivo.
 
 📂 **Archivos específicos para LaTeX:**  
 Ubicados en:
 - `~/.config/nvim/ftplugin/tex/tex.vim`
 - `~/.config/nvim/ftplugin/tex/vimtex.vim`
 
-Por comodidad, hay algunos comandos que sólo funcionan en docs LaTeX
+Por comodidad, hay algunos comandos que sólo funcionan en archivos LaTeX (.tex).
 
  Atajos para LaTeX:
 | Acción | Tecla |
@@ -109,7 +109,7 @@ Por comodidad, hay algunos comandos que sólo funcionan en docs LaTeX
 | Abrir visor PDF | `<leader> + v` |
 
 
-Y otros muchos más que están definidos en los archivos menciondados antes
+Y otros muchos más que están definidos en los archivos menciondados antes.
 <br>❗❗IMPORTANTE: Revisa la documentación oficial de [VimTeX](https://github.com/lervag/vimtex) para saber qué hace cada comando.
 >Nota: Puedes cambiar el PDFviewer si gustas comentando o descomntando las líneas relacionadas en los archivos menciondados arriba
 
@@ -130,4 +130,4 @@ En el documento se encuentran varios temas basados en paletas famosas. Estos se 
    *(Elimina `~/.config/nvim/after/` si eliges la última opción).*
 ---
 ## 🐢 **Notas Finales**
-En regla general, si siguen las instrucciones, Neovim está listo para ser utilizado. Aunque espacio para una personalización más personalizada.
+Ahora tienes un Neovim con autompletado (no para LaTeX, pero es tu decisión utilizar snippets o una extensión de CoC), colores bonitos y un montoón de plugins que no sabes qué hacen. Y en regla general, si se siguen las instrucciones, Neovim está más que bien, aunque queda espaci para una personalización más personalizada.
