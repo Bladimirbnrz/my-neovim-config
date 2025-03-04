@@ -55,13 +55,13 @@ syntax match Comment "%.*$"
 "MINE STYLE                                       "======>   Función   <=======
 "==============                                      
 highlight Normal   guifg=#EBDBB2 guibg=#192330    "======> Texto / Fondo
-highlight Delims   guifg=#8BC4BA                  "======> Delimitadores {}, [], ()  
-highlight MathOper guifg=#8BC4BA                  "======> Operadores =, +, -, / 
+highlight Delims   guifg=#ABE9a3                  "======> Delimitadores {}, [], ()  
+highlight MathOper guifg=#ABE9a3                  "======> Operadores =, +, -, / 
 highlight Cmd      guifg=#86ABDC                  "======> Comandos Generales
-highlight SpCmd    guifg=#BD93F6 gui=bold         "======> Sections ... \section, \subsection, etc   
+highlight SpCmd    guifg=#971678 gui=bold         "======> Sections ... \section, \subsection, etc   
 highlight Envs     guifg=#C94F6D gui=bold         "======> \begin{} ... \end{}   
 highlight Comment  guifg=#A5A8C0                  "======> Comentarios 
-highlight texMath  guifg=#7DAC81                  "======> Texto matemático 
+highlight texMath  guifg=#5EAD9F                  "======> Texto matemático 
 highlight link MathInLine texMath
 highlight link texMathEnv texMath
 highlight link DelimsMathEnv texMath
