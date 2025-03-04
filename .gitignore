@@ -1,0 +1,16 @@
+# Ignorar la carpeta de plugins
+plugged/
+
+# Ignorar archivos de sesión y backups de Neovim
+swap/
+undo/
+backup/
+session/
+
+# Archivos específicos de Netrw (si usas el explorador de archivos de Vim)
+.netrwhist
+
+# Archivos de caché y temporales
+*.swp
+*.swo
+*.swn
