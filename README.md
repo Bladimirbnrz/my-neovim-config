@@ -1,11 +1,12 @@
-# MY NEOVIM CONFIG
+#  **My Neovim Config**❓
+
 ---
 
 ## 🚀 **Requisitos Previos**
 Antes de clonar el repositorio, asegúrate de tener instalado:
 - [vim-plug](https://github.com/junegunn/vim-plug) para gestionar plugins.
-- Una fuente [Nerd Font](https://www.nerdfonts.com/) para símbolos y caracteres especiales.
-- [Node.js](https://nodejs.org/) si usas **coc.nvim** u otros plugins que lo requieran.
+- Tener instalada una [Nerd Font](https://www.nerdfonts.com/) para símbolos y caracteres especiales.
+- [Node.js](https://nodejs.org/) si usas **coc.nvim** y demás.
 
 ---
 
@@ -21,13 +22,18 @@ Luego, abre Neovim y ejecuta:
 ```vim
 :PlugInstall
 ```
+## 📚 **Recomendaciones Post-Instalación**
+- Revisa y lee la documentación de todos los plugins
+- Busca el colorscheme que sea de tu agrado 
 
+---
+## 🎨 **Temas**
 Para cambiar de tema, edita `init.vim` y comenta o descomenta las líneas en la sección `themes`.  
-🎨 **Temas recomendados:** *Gruvbox, TokyoNight, Nord, Nightfox*.
+ **Temas recomendados:** *Gruvbox, TokyoNight, Nord, Nightfox*.
 
 ---
 
-## ⌨️ **Atajos y Comandos Útiles**
+## ⌨️ **Utlidades Vim**
 ### 🔹 **Comandos de Vim**
 | Comando | Acción |
 |---------|--------|
@@ -37,7 +43,7 @@ Para cambiar de tema, edita `init.vim` y comenta o descomenta las líneas en la 
 | `gg` / `Shift+G` | Ir al inicio / fin del archivo |
 | `numG` | Ir a la línea especificada |
 | `dd` | Eliminar y copiar línea |
-| `R` | Modo reemplazo (poco útil) |
+| `R` | Modo reemplazo (inútil si me lo preguntas) |
 
 ### 🔹 **Búsqueda y Reemplazo**
 | Comando | Acción |
@@ -45,32 +51,30 @@ Para cambiar de tema, edita `init.vim` y comenta o descomenta las líneas en la 
 | `/texto` / `?texto` | Buscar hacia adelante / atrás |
 | `n` / `N` | Ir a la siguiente / anterior coincidencia |
 | `s/texto/nuevo/g` | Reemplazar en la línea |
-| `%s/texto/nuevo/gc` | Reemplazar en todo el documento (con confirmación) |
+| `%s/texto/nuevo/gc` | Reemplazar de forma global (con confirmación) |
 
 ### 🔹 **Mapeos de Teclas**
 | Acción | Tecla |
 |--------|-------|
-| **Guardar archivo** | `<leader> + w` |
-| **Cerrar archivo** | `<leader> + q` |
+| **Guardar** | `<leader> + w` |
+| **Cerrar ** | `<leader> + q` |
 | **Forzar cierre** | `<leader> + Shift + q` |
-| **Abrir árbol de archivos** | `<leader> + n + s` |
 | **Cerrar árbol de archivos** | `<leader> + q` |
 | **Moverse entre splits** | `Ctrl + h/j/k/l` |
-| **Redimensionar splits** | `<leader> + > / <` |
+| **Redimensionar splits** | `<leader> + Ctrl +  > / <` |
 
-### 🔹 **Plugins y Funciones Especiales**
 #### 🌳 **NERDTree (Árbol de Archivos)**
 | Acción | Tecla |
 |--------|-------|
 | Abrir árbol | `<leader> + n + s` |
 | Cerrar árbol | `<leader> + q` |
-| Abrir archivo en split vertical | `i` |
-| Abrir archivo en split horizontal | `s` |
+| Abrir archivo en split vertical | `Ctrl + v` |
 
 #### 🎯 **EasyMotion**
-| Acción | Tecla |
-|--------|-------|
-| Buscar caracteres | `<leader> + s` |
+| Acción | Tecla |Post-Acción|
+|--------|-------|-----------|
+| Buscar caracteres | `<leader> + s + @@` | Presionar a/b/c/d... para ir a la palabra
+>@@ son dos carácteres cualquiera
 
 #### 🔍 **FZF (Búsqueda Rápida)**
 | Acción | Comando |
@@ -78,158 +82,52 @@ Para cambiar de tema, edita `init.vim` y comenta o descomenta las líneas en la 
 | Buscar archivos | `:Files` o `<leader> + p` |
 
 #### 📝 **Vim-Surround**
+| Acción | Tecla | Post-Acción |
+|--------|-------|-------------|
+| Rodear texto con un carácter | Seleccionar + `<leader> + Shift + s` | Teclear el carácter |
+
+#### 📌**Comentar Rápido**
 | Acción | Tecla |
 |--------|-------|
-| Rodear texto con un carácter | Seleccionar + `<leader> + Shift + s` |
-
+|Des/Comentar| `c +<leader> + c`
 ---
 
-## 🛠 **Configuraciones Especiales**
-Neovim permite configuraciones por tipo de archivo.  
+## 🛠 **Utlidades Especiales**
+Neovim tiene las virtud de poder tener configuraciones especiales para cada tipo de archivo
+
 📂 **Archivos específicos para LaTeX:**  
 Ubicados en:
 - `~/.config/nvim/ftplugin/tex/tex.vim`
 - `~/.config/nvim/ftplugin/tex/vimtex.vim`
 
-📌 Atajos para LaTeX:
+Por comodidad, hay algunos comandos que sólo funcionan en docs LaTeX
+
+ Atajos para LaTeX:
 | Acción | Tecla |
 |--------|-------|
 | Guardar y compilar | `F1` |
 | Abrir visor PDF | `<leader> + v` |
 
-Para más opciones, revisa la documentación oficial de [VimTeX](https://github.com/lervag/vimtex).
+
+Y otros muchos más que están definidos en los archivos menciondados antes
+<br>Nota: Puedes cambiar el PDFviewer si gustas
+>❗❗IMPORTANTE: Revisa la documentación oficial de [VimTeX](https://github.com/lervag/vimtex) para saber qué hace cada comando.
 
 ---
 
-## 🎨 **Temas y Sintaxis**
-Si el resaltado de sintaxis en LaTeX no es suficiente, puedes:
-1. Usar tu propio archivo en `~/.config/nvim/after/syntax/tex.vim`
-2. Activar **TreeSitter** ejecutando:
+## 🎨 **Temas y Sintaxis para LaTeX**
+El resaltado de documentos LaTeX suele ser bastante malo, así que cree mi propio archivo de sintaxis:
+- `~/.config/nvim/after/syntax/tex.vim`
+En el documento se encuentran varios temas basados en paletas famosas. Estos se pueden activar comentando o descomentando las últimas líneas del archivo.
+<br>Creo que es claro cómo funciona.
+<br> **Temas recomendados:** *Nord, One Dark Pro, TokyoNight, Mine*.
+<br> En el caso de no querer ninguna de las paletas que vienen en el documento puedes crear tu propia paleta de colores!!!
+<br>Es muy fácil, en el documento viene cómo hacerlo.
+<br> O, si lo prefieres, puedes probar el resaltado de TreeSitter ejecutando en Neovim:
    ```vim
    :TSInstall latex
    ```
-   *(Si eliges TreeSitter, elimina `~/.config/nvim/after/` para evitar conflictos).*
-
-📌 **Temas recomendados:** *Nord, One Dark Pro, TokyoNight, Mine*.
-<!----Instalar vim-plug para evitar problemas-->
-<!----Instalar un nerd font (hay mucha información sobre cómo hacerlo)-->
-<!----Asegurarte de tener instalado nodejs en tu sistema-->
-<!----Leer este documento-->
-
-<!----Posterior a haber clonado el repositorio:-->
-
-<!---En neovim ejecuta :PlugInstall-->
-<!---Buscar el colorscheme que se mas tu agrado-->
-		<!--Recomendados: gruvbox, tokyonight, nord, nightfox-->
-		<!--Nota: para cambiar entre temas comenta o descomenta las líneas de "themes" en init.vim-->
-<!---Lee la documentación-->
-<!---Visita los repositorios oficiales de todos los plugins y lee la documentación-->
-
-==================================
-Comandos y mapeos de vim
-==================================
-
---Utilidades Vim
-	En modo normal:
-	y = copiar lo seleccionado
-	yy = copiar la línea
-	p = print
-	0 = Ir al inicio de la línea
-	$ = ir al final de la línea
-	gg = Ir al comienzo del archivo
-  shift+g =Ir al final del archivo
-	num de línea+G = ir a la línea
-	dd = Eliminar y copiar línea	
-	p = Pegar lo que esta en el clipboard (abajo)
-	shift+p = Pegar lo que está en el clipboard (arriba)
-	cd (change word) = Cambiar delante del cursor hasta terminar la palabra
-	cir (change the inner word) = Cambia toda la palabra/@@@ = Buscar hacía delante |
-	?@@@ = Buscar hacía tras 		| n ; N  = Moverse entre coicidencias
-	% (sobre un paréntesis) = ir al paréntesi correspondiente
-	R = Modo remplazar (Bastenate inútil si me lo preguntas)
-	
-	En modo comando:
-	s/(texto a remplazar)/(texto nuevo)/g -> para todas las coicidencias(En línea)
-	%s/(texto a remplazar)/(texto nuevo)/gc ->Para preguntar            (En todo)
-
---Más Utilidades
-	leader + w = guardar
-	leader + q = salir
-	leader + shift + q = forzar salida
-
-
---Tree (Árbol de ficheros)
-	Abrir Tree = leader+n+s
-	Cerrar Tree =	 leader+q
-	Abir split verical = i
-	Abir split vertical = s
-
---Vim-surround
-	Seleccinar texto, leader+shift+s, indcar el signo
-
---Ventanas y navegación
-	:vsp = mismo split en verticar
-	:sp = mismo split por debajo
-	Moverse entre splits = Ctrl + h,j,k,l
-  Ctrl + v = abrir split verical = Desde el árbol de ficheros
---Test
-	leader+shift+T
-
---FZF
-	Buscar archivos = :Files ; leader+p
-
---EasyMotion
-	Ir a serie de caracteres = leades+s ->@@(Caracteres cualquiera) ->a,b,d,f... (presionar las letras anteriores te manda a la coicidencia)
-	 "" = leader+s
-
---Comentarios
-	Comentar/des = leader, c, leadera    
-
---Redimensionar splits
-	Más = leader+ > (Uno a la vez)
-	Menos = leader+ < (Uno a la vez)
-
---Moverse entre tabs
-	leader + h,j,k,l
-
-
-
-==================================
-      Utilidades especiales
-==================================
-
-neovim tiene las virtud de poder tener configuraciones especiales para cada tipo de archivo
-~/.cofig/ftplugin/...
-
-Por comodidad, hay algunos comandos que sólo funcionan en docs LaTeX
-
-F1 = Guarda y compila
-leader + v = abre el visor PDF
-Y otros muchos más que están definidos en ~/.config/nvim/ftplugin/tex/tex.vim y ~/.config/nvim/ftplugin/tex/vimtex.vim
-
-Nota:
-Puedes cambiar el visor PDF de tu preferencia
-
-==========================================
-IMPORTANTE: 
-LEER LA DOCUMENTACIÓN OFICIAL EN EL REPOSITORIO DE VIMTEX PARA SABER QUE HACE CADA COMANDO
-se encuentra en: https://github.com/lervag/vimtex
-==========================================
-
-Nota: 
-El resaltado de documentos LaTeX suele ser bastante malo, así que mi propio archivo de sintaxis:
-~/.config/nvim/after/syntax/tex.vim
-
-En el documento se encuentran varios temas, los cuales se pueden activar comentando o descomentando las últimas líneas del archivo
-Creo que es claro cómo funciona. 
-Recomendados: nord, one dark pro, tokyonight, mine 
-
-En el caso de no querer ninguna de las sintaxis que vienen en el documento puedes crear tu propia sintaxis!!
-Es muy fácil, el documento viene cómo hacerlo.
-
-O si lo prefieres, probar el resaltado TreSitter ejecutando en neovim
-:TSIstall latex 
-
-(Elimina la carpeta ~/.../after si eliges esta última opción)
-
-# my-neovim-config
+   *(Elimina `~/.config/nvim/after/` si eliges la última opción).*
+---
+## 🐢 **Notas Finales**
+En regla general, si siguen las instrucciones, Neovim está listo para ser utilizado. Aunque espacio para una personalización más personalizada.
