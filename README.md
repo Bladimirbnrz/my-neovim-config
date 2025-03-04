@@ -54,6 +54,8 @@ Para cambiar de tema, edita `init.vim` y comenta o descomenta las líneas en la 
 | `%s/texto/nuevo/gc` | Reemplazar de forma global (con confirmación) |
 
 ### 🔹 **Mapeos de Teclas**
+>En mi caso `<leader>` está defenida como "Espacio", aunque tu la puedes cambiar a la que quieras.
+
 | Acción | Tecla |
 |--------|-------|
 | **Guardar** | `<leader> + w` |
@@ -130,4 +132,4 @@ En el documento se encuentran varios temas basados en paletas famosas. Estos se 
    *(Elimina `~/.config/nvim/after/` si eliges la última opción).*
 ---
 ## 🐢 **Notas Finales**
-Ahora tienes un Neovim con autompletado (no para LaTeX, pero es tu decisión utilizar snippets o una extensión de CoC), colores bonitos y un montoón de plugins que no sabes qué hacen. Y en regla general, si se siguen las instrucciones, Neovim está más que bien, aunque queda espaci para una personalización más personalizada.
+Ahora tienes un Neovim con autompletado (no para LaTeX, pero es tu decisión utilizar snippets o una extensión de CoC), colores bonitos y un montoón de plugins que no sabes qué hacen. Y en regla general, si se siguen las instrucciones, Neovim está más que bien, aunque queda espacio para una personalización más personalizada.
