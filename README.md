@@ -110,8 +110,8 @@ Por comodidad, hay algunos comandos que sólo funcionan en docs LaTeX
 
 
 Y otros muchos más que están definidos en los archivos menciondados antes
-<br>Nota: Puedes cambiar el PDFviewer si gustas
->❗❗IMPORTANTE: Revisa la documentación oficial de [VimTeX](https://github.com/lervag/vimtex) para saber qué hace cada comando.
+<br>❗❗IMPORTANTE: Revisa la documentación oficial de [VimTeX](https://github.com/lervag/vimtex) para saber qué hace cada comando.
+>Nota: Puedes cambiar el PDFviewer si gustas comentando o descomntando las líneas relacionadas en los archivos menciondados arriba
 
 ---
 
